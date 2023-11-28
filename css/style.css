@@ -59,4 +59,13 @@ form .search-icon {
   height: 100%;
 }
 
+.weather-temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  font-weight: 40;
+  color: #fff;
+}
+
 /*# sourceMappingURL=style.css.map */
