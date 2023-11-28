@@ -1,0 +1,27 @@
+form{
+    @include flexBox;
+    gap: 14px;
+    padding-top: 60px;
+
+    input{
+        display: flex;
+        width: 180px;
+        height: 40px;
+        font-size: 20px;
+        font-weight: 400;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .search-icon{
+        @include flexBox;
+        background: #fff;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: none;
+    } 
+}
