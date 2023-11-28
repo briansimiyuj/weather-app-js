@@ -77,4 +77,30 @@ form .search-icon {
   font-weight: 400;
 }
 
+.data-container {
+  margin-top: 50px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.data-container .element {
+  margin: auto;
+  display: flex;
+  justify-content: start;
+  gap: 12px;
+}
+.data-container .element .data {
+  font-size: 20px;
+  font-weight: 400;
+}
+.data-container .element .data .text {
+  font-size: 20px;
+  font-weight: 400;
+}
+.data-container .element .icon {
+  width: 40px;
+  height: 40px;
+}
+
 /*# sourceMappingURL=style.css.map */

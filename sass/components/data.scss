@@ -1,0 +1,27 @@
+.data-container{
+    margin-top: 50px;
+    color: #fff;
+    @include flexBox;
+    
+    .element{
+        margin: auto;
+        display: flex;
+        justify-content: start;
+        gap: 12px;
+
+        .data{
+            font-size: 20px;
+            font-weight: 400;
+
+            .text{
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+
+        .icon{
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
