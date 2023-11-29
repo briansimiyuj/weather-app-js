@@ -8,4 +8,14 @@ const input = document.querySelector("input") as HTMLInputElement,
       humidityPercentage = document.querySelector("#humidity-percentage") as HTMLSpanElement,
       windRate = document.querySelector("#wind-rate") as HTMLSpanElement
 
-console.log(input, form, searchIcon, weatherImage, temp, weatherLocation, weatherIcon, humidityPercentage, windRate)
+
+
+input.addEventListener("input", () =>{
+
+    if(input.value.length){
+
+        weatherLocation.textContent = input.value
+
+    }
+
+})
