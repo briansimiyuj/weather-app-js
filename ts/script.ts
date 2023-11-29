@@ -34,6 +34,6 @@ const search = async () =>{
 
       data = await response.json()
 
-   console.log(data)
+   humidityPercentage.textContent = Math.floor(data.main.humidity).toString()
 
 }

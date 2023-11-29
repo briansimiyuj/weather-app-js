@@ -18,5 +18,5 @@ input.addEventListener("input", () => {
 const APIKey = "30d95878ab2819e2f838a7f9024d365d";
 const search = () => __awaiter(void 0, void 0, void 0, function* () {
     const URL = `https://api.openweathermap.org/data/2.5/weather?q=${weatherLocation.textContent}&units=Metric&appid=${APIKey}`, response = yield fetch(URL), data = yield response.json();
-    console.log(data);
+    humidityPercentage.textContent = Math.floor(data.main.humidity).toString();
 });
