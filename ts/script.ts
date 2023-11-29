@@ -16,7 +16,7 @@ input.addEventListener("input", () =>{
 
         weatherLocation.textContent = input.value
 
-    }
+    }``
 
     search()
 
@@ -35,5 +35,7 @@ const search = async () =>{
       data = await response.json()
 
    humidityPercentage.textContent = Math.floor(data.main.humidity).toString()
+
+   temp.textContent = Math.floor(data.main.temp).toString()
 
 }
