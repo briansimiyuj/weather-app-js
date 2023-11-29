@@ -18,4 +18,22 @@ input.addEventListener("input", () =>{
 
     }
 
+    search()
+
 })
+
+
+const APIKey = "30d95878ab2819e2f838a7f9024d365d"
+
+
+const search = async () =>{
+
+  const URL = `https://api.openweathermap.org/data/2.5/weather?q=${weatherLocation.textContent}&units=Metric&appid=${APIKey}`,
+
+      response = await fetch(URL),
+
+      data = await response.json()
+
+   console.log(data)
+
+}
