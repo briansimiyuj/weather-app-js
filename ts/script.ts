@@ -36,6 +36,8 @@ const search = async () =>{
 
    humidityPercentage.textContent = Math.floor(data.main.humidity).toString()
 
-   temp.textContent = Math.floor(data.main.temp).toString()
+   temp.textContent = Math.floor(data.main.temp).toString() 
+
+   windRate.textContent = Math.floor(data.wind.speed).toString()
 
 }

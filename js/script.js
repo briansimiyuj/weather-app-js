@@ -21,4 +21,5 @@ const search = () => __awaiter(void 0, void 0, void 0, function* () {
     const URL = `https://api.openweathermap.org/data/2.5/weather?q=${weatherLocation.textContent}&units=Metric&appid=${APIKey}`, response = yield fetch(URL), data = yield response.json();
     humidityPercentage.textContent = Math.floor(data.main.humidity).toString();
     temp.textContent = Math.floor(data.main.temp).toString();
+    windRate.textContent = Math.floor(data.wind.speed).toString();
 });
