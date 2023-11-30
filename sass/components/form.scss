@@ -14,7 +14,7 @@ form{
         border-radius: 20px;
         padding: 20px;
     }
-
+    
     .search-icon{
         @include flexBox;
         background: #fff;
@@ -23,5 +23,11 @@ form{
         border-radius: 50%;
         cursor: pointer;
         border: none;
+    } 
+
+    
+
+    @media screen and (max-width: 350px){
+        padding-top: 20px;
     } 
 }
