@@ -42,7 +42,7 @@ const search = async () =>{
 
    windRate.textContent = Math.floor(data.wind.speed).toString()
 
-   
+
     const iconMapping: Record<WeatherIconCode, string> = {
         "01d": "../img/clear.png",
         "01n": "../img/clear.png",
@@ -75,3 +75,10 @@ const search = async () =>{
 }
 
 
+searchIcon.addEventListener("click", () =>{
+
+    form.submit()
+
+    console.log('working')
+
+})

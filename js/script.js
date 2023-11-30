@@ -45,3 +45,7 @@ const search = () => __awaiter(void 0, void 0, void 0, function* () {
         alert('Invalid icon code or element not found');
     }
 });
+searchIcon.addEventListener("click", () => {
+    form.submit();
+    console.log('working');
+});
