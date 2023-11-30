@@ -13,7 +13,6 @@ input.addEventListener("input", () => {
     if (input.value.length) {
         weatherLocation.textContent = input.value;
     }
-    search();
 });
 const APIKey = "30d95878ab2819e2f838a7f9024d365d";
 const search = () => __awaiter(void 0, void 0, void 0, function* () {
@@ -46,6 +45,8 @@ const search = () => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 searchIcon.addEventListener("click", () => {
-    form.submit();
-    console.log('working');
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        search();
+    });
 });

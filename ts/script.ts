@@ -20,8 +20,6 @@ input.addEventListener("input", () =>{
 
     }
 
-    search()
-
 })
 
 
@@ -77,8 +75,12 @@ const search = async () =>{
 
 searchIcon.addEventListener("click", () =>{
 
-    form.submit()
+    form.addEventListener("submit", (e:SubmitEvent) =>{
 
-    console.log('working')
+        e.preventDefault()
+    
+        search()
+    
+    })
 
 })
