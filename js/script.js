@@ -13,7 +13,6 @@ input.addEventListener("input", () => {
     if (input.value.length) {
         weatherLocation.textContent = input.value;
     }
-    ``;
     search();
 });
 const APIKey = "30d95878ab2819e2f838a7f9024d365d";
@@ -22,4 +21,27 @@ const search = () => __awaiter(void 0, void 0, void 0, function* () {
     humidityPercentage.textContent = Math.floor(data.main.humidity).toString();
     temp.textContent = Math.floor(data.main.temp).toString();
     windRate.textContent = Math.floor(data.wind.speed).toString();
+    const iconMapping = {
+        "01d": "../img/clear.png",
+        "01n": "../img/clear.png",
+        "02d": "../img/cloud.png",
+        "02n": "../img/cloud.png",
+        "03d": "../img/drizzle.png",
+        "03n": "../img/drizzle.png",
+        "04d": "../img/drizzle.png",
+        "04n": "../img/drizzle.png",
+        "09d": "../img/rain.png",
+        "09n": "../img/rain.png",
+        "10d": "../img/rain.png",
+        "10n": "../img/rain.png",
+        "13d": "../img/snow.png",
+        "13n": "../img/snow.png",
+    };
+    const apiIconCode = data.weather[0].icon;
+    if (weatherImage && iconMapping.hasOwnProperty(apiIconCode)) {
+        weatherImage.src = iconMapping[apiIconCode];
+    }
+    else {
+        alert('Invalid icon code or element not found');
+    }
 });
