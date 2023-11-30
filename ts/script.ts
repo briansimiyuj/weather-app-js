@@ -78,6 +78,12 @@ searchIcon.addEventListener("click", () =>{
     form.addEventListener("submit", (e:SubmitEvent) =>{
 
         e.preventDefault()
+
+        weatherImage.src = ''
+
+        windRate.textContent = ''
+
+        humidityPercentage.textContent = ''
     
         search()
     

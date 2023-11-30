@@ -47,6 +47,9 @@ const search = () => __awaiter(void 0, void 0, void 0, function* () {
 searchIcon.addEventListener("click", () => {
     form.addEventListener("submit", (e) => {
         e.preventDefault();
+        weatherImage.src = '';
+        windRate.textContent = '';
+        humidityPercentage.textContent = '';
         search();
     });
 });
